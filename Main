@@ -1,0 +1,36 @@
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your code.
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(factorial(4));
+        System.out.println(iteratively(4));
+        System.out.println(stringy("hello"));
+        System.out.println(stringy("recursion"));
+    }
+    public static int factorial(int x){
+        if(x==0) return 1;
+        return x*factorial(x-1);
+    }
+    public static int iteratively(int x){
+        int y=0;
+        for(int i = x-1; i>0; i--){
+           y+=x*i;
+
+        }
+        return y;
+    }
+
+    public static String stringy(String x){
+        if(x.length()<2) return "";
+        return (x.substring(0,1) + stringy(x.substring(2)));
+    }
+
+    public static void arrayer(int[] x, int y){
+        if(y==x.length)
+        { return ;
+        }
+
+
+    }
+}
