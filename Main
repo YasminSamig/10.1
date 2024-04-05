@@ -3,10 +3,18 @@
 
 public class Main {
     public static void main(String[] args) {
+        int[] nums = {1, 2, 3, 4};
+        ArrayList<Integer> numbers = new ArrayList<Integer>;
+        numbers.add(3);
+        numbers.add(4);
+        numbers.add(5);
+        numbers.add(6);
         System.out.println(factorial(4));
         System.out.println(iteratively(4));
         System.out.println(stringy("hello"));
         System.out.println(stringy("recursion"));
+        arrayer(nums, 2);
+        arrayLister(numbers,1);
     }
     public static int factorial(int x){
         if(x==0) return 1;
@@ -27,10 +35,14 @@ public class Main {
     }
 
     public static void arrayer(int[] x, int y){
-        if(y==x.length)
-        { return ;
-        }
+        if(y==x.length){ return;}
+        System.out.println(x[y] + "");
+        arrayer(x, y+1);
+    }
 
-
+    public static void arrayLister(ArrayList<Integer> x, int y){
+        if(y==x.size()){return;}
+        System.out.println(x.get(y) + "");
+        ArrayLister(x,i+1)
     }
 }
